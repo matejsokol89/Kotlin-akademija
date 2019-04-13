@@ -8,7 +8,7 @@ Go through the collection from start to end and print its elements up to the poi
  */
 fun main() {
 
-    var amplititudes = IntArray(100) { Random().nextInt(100) }.asList()
+    val amplititudes = IntArray(100) { Random().nextInt(100) }.asList()
     print(amplititudes)
     for (i in amplititudes.indices) {
         if (amplititudes[i]<10){
