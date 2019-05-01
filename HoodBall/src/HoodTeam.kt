@@ -1,0 +1,1 @@
+class HoodTeam(var teamName : String,  var hood: String)
