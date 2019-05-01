@@ -1,1 +1,1 @@
-class HoodTeam(var teamName : String,  var hood: String)
+class HoodTeam(var teamName : String,  var hood: String, val strength: Double)

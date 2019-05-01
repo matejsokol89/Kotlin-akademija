@@ -1,0 +1,4 @@
+interface Announcer {
+    fun introduction()
+
+}

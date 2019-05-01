@@ -7,7 +7,7 @@ open class HoodPlayer(
     private val hoodTeamName: HoodTeam
 
 
-) : Person(hoodName, age), Introuduce {
+) : Person(hoodName, age), Announcer {
     override fun introduction() {
         val represent = "Pozdrav svima imamo momka od $age godina," +
                 " nosi dres sa brojem $jersey i igra na poziciji $position i reperezentira ${hoodTeamName.teamName}," +
@@ -19,7 +19,6 @@ open class HoodPlayer(
 
 }
 
-interface Introuduce {
 
-    fun introduction()
-}
+
+
