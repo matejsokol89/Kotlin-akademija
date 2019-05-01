@@ -1,9 +1,9 @@
 class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
+
     var gameScore:HoodScore = HoodScore(0,0,11)
 
-
     fun game(){
-        var gameOver:Boolean=false
+        var gameOver = false
         var currentTeam:HoodTeam = homeTeam
         while (!gameOver){
             // Throw the ball
@@ -23,21 +23,17 @@ class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
                 gameOver= this.gameScore.increaseAwayScore(newPoints)
             }
 
-
             if (gameOver){
-                println("winner is ${currentTeam.teamName} and sore is " + gameScore.result())
+                println("winner is ${currentTeam.teamName} and score is ${gameScore.result()}")
             }
 
-
+            //swap teams
             if (currentTeam==homeTeam){
                 currentTeam=awayTeam
             }
             else{
                 currentTeam=homeTeam
             }
-
-            //swap teams
         }
-
     }
 }
