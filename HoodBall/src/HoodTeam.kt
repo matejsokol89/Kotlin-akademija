@@ -1,7 +1,7 @@
 class HoodTeam(
      var teamName : String,
      var hood: String,
-     players: List<HoodPlayer>,
+    var players: List<HoodPlayer>,
      coach: HoodCoach
 
      ){

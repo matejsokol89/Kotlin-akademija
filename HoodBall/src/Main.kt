@@ -1,4 +1,5 @@
 fun main(args: Array<String>) {
+
     val sokoolJr = HoodPlayer("Sokool Jr.",29,0,"SG","Shoot za 3 i Dirty Defence",
         3.99)
     val sokoolSr = HoodPlayer("Sokool Sr.",34,23,"PG","All-Around Two-Way Player",
@@ -6,6 +7,8 @@ fun main(args: Array<String>) {
     val homeCoach = HoodCoach("Ludi Bero",67,3.59)
 
     val homeTeam = HoodTeam("South Side", "Jug 2", listOf(sokoolJr,sokoolSr),homeCoach)
+    val host = Host("BigDady", 43,homeTeam.players)
+    host.introduction()
 
     homeCoach.coach()
 //    val people: List<Person> = listOf(hoodPlayer)
