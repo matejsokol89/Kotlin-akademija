@@ -1,6 +1,6 @@
 class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
 
-    var gameScore:HoodScore = HoodScore(0,0,11)
+    var gameScore:HoodScore = HoodScore(0,0,21)
 
     fun game(){
         var gameOver = false
