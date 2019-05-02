@@ -13,7 +13,7 @@ class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
                 1->pointsShort
                 else->pointsLong
             }
-            println(currentTeam.teamName + "je zabio " + newPoints)
+            println(currentTeam.teamName + " je zabio " + newPoints)
 
             //increase score
             if(currentTeam == homeTeam){

@@ -13,9 +13,6 @@ class HoodTeam(
         var total:Double = 0.0
         players.forEach{total+=it.playerStrentgh}
         strength = total/players.size * coach.coachStrentgh
-        println("ovo je")
-        println(strength)
-
 
     }
 }

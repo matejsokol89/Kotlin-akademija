@@ -4,13 +4,11 @@ class HoodScore(private var homeScore:Int, private var awayScore:Int, private va
         this.awayScore += points
          return this.awayScore >= winningScore && this.awayScore > this.homeScore+1
 
-         //&& this.awayScore > this.homeScore+1
 
     }
     fun increaseHomeScore(points:Int):Boolean{
         this.homeScore += points
         return this.homeScore >= winningScore && this.homeScore > this.awayScore+1
-        // && this.homeScore > this.homeScore+1
 
 
     }
