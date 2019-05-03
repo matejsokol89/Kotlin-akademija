@@ -20,7 +20,8 @@ class Host(
         println("A Sa lijeve strane je početna trojka ${awayTeam.teamName}-a, a playeri su  ${awayPlayers.map { it.realName }.toString().replace("[", "")
             .replace("]", "")} i njihov trener je ${awayCoach.realName} koji vodi ovaj tim već ${awayCoach.age} godina")
 
-
+        println("Neka igra počne................")
+        println()
 
 
     }

@@ -1,24 +1,30 @@
 
 fun main(args: Array<String>) {
     println(27.toChar() + "[2J")
-    val sokoolJr = HoodPlayer("Sokool Jr.",29,0,"SG","Shoot za 3 i Dirty Defence",
-        3.99)
+    val sokoolJr = HoodPlayer("Sokool Jr.",29,24,"SG","Shoot za 3 i Dirty Defence",
+        2.71)
     val sokoolSr = HoodPlayer("Sokool Sr.",34,23,"PG","All-Around Two-Way Player",
-        6.99)
-    val homeCoach = HoodCoach("Ludi Bero",27,3.59)
+        3.70)
+    val trikika = HoodPlayer("Trikika",38,14,"SG","Scorer i Clutch-er",
+        3.33 )
+    val homeCoach = HoodCoach("Ludi Bero",27,2.59)
 
-    val homeTeam = HoodTeam("South Side", "Jug 2", listOf(sokoolJr,sokoolSr),homeCoach)
+    val homeTeam = HoodTeam("South Side", "Jug 2", listOf(sokoolJr,sokoolSr,trikika),homeCoach)
 
 
 //    homeCoach.coach()
 //    val people: List<Person> = listOf(hoodPlayer)
     /* todo: homeTeam zadnji korak, daj mu igrace, daj mu coach) */
-    val trikika = HoodPlayer("Trikika",38,14,"SG","Scorer i Clutch-er",
-        5.99 )
-    val bigBaby = HoodPlayer("BigBaby",24,24,"C","Fat-Post-Man",
-        4.99 )
-    val awayTeam = HoodTeam("North Side", "Jug 2", listOf(trikika,bigBaby),homeCoach)
-    val awayCoach = HoodCoach("Batistuta",17,3.59)
+    val basta = HoodPlayer("Basta",50,34,"SG","3pt shooter, assist",
+        4.95 )
+    val ivanGrozni = HoodPlayer("IvanGrozni",45,17,"C","Post and Rebound",
+        4.24 )
+
+    val profesorMiss = HoodPlayer("ProfesorMiss",44,27,"PG","Missing everything",
+        0.39 )
+
+    val awayTeam = HoodTeam("North Side", "Jug 2", listOf(basta,ivanGrozni,profesorMiss),homeCoach)
+    val awayCoach = HoodCoach("Batistuta",17,2.35)
 
 
     val host = Host("BigDady", 43,homeTeam.players,homeTeam,awayTeam,homeCoach,awayCoach,awayTeam.players)

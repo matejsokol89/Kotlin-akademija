@@ -13,7 +13,7 @@ class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
                 1->pointsShort
                 else->pointsLong
             }
-            println(currentTeam.teamName + " je zabio " + newPoints)
+            println(currentTeam.teamName + " je zabio " + newPoints + " poena")
 
             //increase score
             if(currentTeam == homeTeam){
@@ -24,7 +24,8 @@ class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
             }
 
             if (gameOver){
-                println("winner is ${currentTeam.teamName} and score is ${gameScore.result()}")
+                println()
+                println("Pobjednik je ekipa ${currentTeam.teamName} sa rezultatom ${gameScore.result()}")
             }
 
             //swap teams
