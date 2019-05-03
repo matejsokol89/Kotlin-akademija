@@ -14,6 +14,7 @@ class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
                 else->pointsLong
             }
             println(currentTeam.teamName + " je zabio " + newPoints + " poena")
+            Thread.sleep(600)
 
             //increase score
             if(currentTeam == homeTeam){
@@ -24,6 +25,8 @@ class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
             }
 
             if (gameOver){
+                Thread.sleep(1000)
+
                 println()
                 println("Pobjednik je ekipa ${currentTeam.teamName} sa rezultatom ${gameScore.result()}")
             }
@@ -36,6 +39,8 @@ class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
                 currentTeam=homeTeam
             }
         }
+        Thread.sleep(1500)
+
         println()
         println("################### END-GAME ################### ")
 
