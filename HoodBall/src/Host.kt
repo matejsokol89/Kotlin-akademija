@@ -12,6 +12,12 @@ class Host(
     ):Person(hostName,age), Announcer {
     override fun introduction() {
 
+        println("################### HOOD-BALL ####################")
+        println("################# love this game #################")
+        println()
+        println("################### GAME STARTED #################")
+        println()
+
               println("Pozdrav svima ja sam $realName Vaš Host za danas. Ljudi čeka nas ludi dvoboj između ${homeTeam.teamName}-a" +
                     " VS ${awayTeam.teamName}-a.")
         println("Sa desne strane je početna trojka ${homeTeam.teamName}-a, a playeri su  ${homePlayers.map { it.realName }.toString().replace("[", "")

@@ -3,21 +3,15 @@ open class HoodPlayer(
     age: Int,
     private val jersey: Int,
     private val position:String,
-    private val specialAbility: String,// napraviti kao liste
+    private val specialAbility: String,
     val playerStrentgh:Double
 
 
-) : Person(hoodName, age), Announcer {
-    override fun introduction() {
-        val represent = "Pozdrav svima imamo momka od $age godina," +
-                " nosi dres sa brojem $jersey i igra na poziciji $position i reperezentira," +
-                " njegova specijalka je $specialAbility on se zove $realName !!!  "
-        print(represent)
-
-    }
+) : Person(hoodName, age)
 
 
-}
+
+
 
 
 

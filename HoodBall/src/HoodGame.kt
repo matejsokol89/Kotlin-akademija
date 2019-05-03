@@ -36,5 +36,8 @@ class HoodGame(private val homeTeam: HoodTeam, private val awayTeam: HoodTeam) {
                 currentTeam=homeTeam
             }
         }
+        println()
+        println("################### END-GAME ################### ")
+
     }
 }
